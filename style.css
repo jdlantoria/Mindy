@@ -145,11 +145,16 @@ body {
     color: var(--color-white);
 }
 .title .happy span, .title .birthday span{
-    margin-right: 2px;
     transform: translateY(50px);
     opacity: 0;
     visibility: hidden;
     animation: txtTranslateY .5s var(--t) forwards;
+}
+.title .birthday span {
+  margin-right: 3px;
+}
+.title .birthday span:nth-child(-n+4) {
+  color: #ff4d6d;
 }
 @keyframes txtTranslateY{
     100%{
