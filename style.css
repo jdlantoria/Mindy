@@ -1045,12 +1045,6 @@ body {
   box-shadow: 0 0 15px #ff6b81;
 }
 
-/* PULSE 21st */
-.title .birthday span:nth-child(-n+4) {
-  color: #ff4d6d;
-  animation: pulse 1s infinite;
-}
-
 @keyframes pulse {
   0% { transform: scale(1); }
   50% { transform: scale(1.2); }
