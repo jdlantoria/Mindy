@@ -151,7 +151,7 @@ body {
     animation: txtTranslateY .5s var(--t) forwards;
 }
 .title .birthday span {
-  margin-right: 7px;
+  margin-right: 5px;
 }
 .title .birthday span:nth-child(-n+4) {
   color: #ff4d6d;
