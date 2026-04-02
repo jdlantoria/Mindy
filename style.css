@@ -341,21 +341,6 @@ body {
     position: absolute;
     top: -70px;
     left: -70px;
-    animation: balloon1 2s infinite linear;
-}
-@keyframes balloon1{
-    0%, 50%,100%{
-        transform-origin: bottom right;
-        transform: rotate(0deg);
-    }
-    25%{
-        transform-origin: bottom right;
-        transform: rotate(3deg);
-    }
-    75%{
-        transform-origin: bottom right;
-        transform: rotate(-3deg);
-    }
 }
 .right .balloon_two{
     position: absolute;
@@ -363,21 +348,6 @@ body {
     right: -65px;
     z-index: -1;
     transform: rotate(10deg);
-    animation: balloon2 2s infinite linear;
-}
-@keyframes balloon2 {
-    0%,50%,100%{
-        transform-origin: bottom left;
-        transform: rotate(10deg);
-    }
-    25%{
-        transform-origin: bottom left;
-        transform: rotate(7deg);
-    }
-    75%{
-        transform-origin: bottom left;
-        transform: rotate(13deg);
-    }
 }
 
 .decorate_star{
@@ -787,13 +757,6 @@ body {
 
     .name span {
         font-size: 1rem;
-    }
-
-    .right .balloon_one {
-        position: absolute;
-        top: 10px;
-        left: -77px;
-        animation: balloon1 2s infinite linear;
     }
 
     .right .balloon_one img{
