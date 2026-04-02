@@ -168,8 +168,23 @@
 <script>
     document.addEventListener("click", function () {
   const music = document.getElementById("bg-music");
-  music.volume = 0.3;
-  music.play();
+
+  if (music) {
+    music.volume = 0.3;
+
+    let playPromise = music.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          console.log("Music playing 🎶");
+        })
+        .catch((error) => {
+          console.log("Error playing:", error);
+        });
+    }
+  }
+
 }, { once: true });
     let datetxt = "08 April";
     let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
