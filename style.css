@@ -1032,8 +1032,8 @@ body {
 
 .right .balloon_two {
   position: absolute;
-  top: 115px;
-  right: -115px;
+  top: 95px;
+  right: -100px;
   z-index: 1;
   transform: rotate(10deg);
   animation: float 3s ease-in-out infinite;
