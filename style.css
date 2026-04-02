@@ -1026,15 +1026,15 @@ body {
 .right .balloon_one {
   position: absolute;
   top: -30px;
-  left: -60px;
+  left: -40px;
   animation: float 3s ease-in-out infinite;
 }
 
 .right .balloon_two {
   position: absolute;
-  top: 120px;
-  right: -140px;
-  z-index: 2;
+  top: 115px;
+  right: -115px;
+  z-index: 1;
   transform: rotate(10deg);
   animation: float 3s ease-in-out infinite;
   animation-delay: 1s;
