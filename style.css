@@ -1029,28 +1029,6 @@ body {
     color: white;
     z-index: 10000000000000000;
 }
-.balloon_one img,
-.balloon_two img {
-  animation: float 3s ease-in-out infinite;
-}
-
-.balloon_two img {
-  animation-delay: 1s;
-}
-.image img {
-  width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 6px solid #ff6b81;
-  box-shadow: 0 0 25px rgba(255, 105, 135, 0.7);
-}
-.name {
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: bounce 2s infinite;
-}
 
 @keyframes bounce {
   0%,100% { transform: translateX(-50%) translateY(0); }
@@ -1081,4 +1059,61 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+.right .balloon_one {
+  position: absolute;
+  top: -70px;
+  left: -70px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.right .balloon_two {
+  position: absolute;
+  top: 170px;
+  right: -65px;
+  z-index: -1;
+  transform: rotate(10deg);
+  animation: float 3s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(10deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+  100% { transform: translateY(0px) rotate(10deg); }
+}
+.content .right .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.content .right .image {
+  border: 6px solid #ff6b81;
+  box-shadow: 0 0 25px rgba(255, 105, 135, 0.7);
+}
+.name {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.name {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, -5px); }
+}button {
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.15);
+  background: #ff4d6d;
+  color: white;
+  box-shadow: 0 0 15px #ff4d6d;
 }
