@@ -1025,8 +1025,8 @@ body {
 }
 .right .balloon_one {
   position: absolute;
-  top: -30px;
-  left: -40px;
+  top: -20px;
+  left: -110px;
   animation: float 3s ease-in-out infinite;
 }
 
