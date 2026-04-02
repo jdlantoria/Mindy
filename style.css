@@ -1029,19 +1029,26 @@ body {
     color: white;
     z-index: 10000000000000000;
 }
-.balloon_one {
+.balloon_one img,
+.balloon_two img {
   animation: float 3s ease-in-out infinite;
 }
 
-.balloon_two {
-  animation: float 3s ease-in-out infinite;
+.balloon_two img {
   animation-delay: 1s;
 }
 .image img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
   border: 6px solid #ff6b81;
-  box-shadow: 0 0 30px rgba(255, 105, 135, 0.7);
+  box-shadow: 0 0 25px rgba(255, 105, 135, 0.7);
 }
 .name {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
   animation: bounce 2s infinite;
 }
 
@@ -1074,17 +1081,4 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
-}
-body::after {
-  content: "💖 💕 💗 💘";
-  position: absolute;
-  top: 100%;
-  left: 10%;
-  animation: hearts 10s linear infinite;
-  font-size: 20px;
-}
-
-@keyframes hearts {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-100vh); }
 }
