@@ -129,6 +129,7 @@ body {
     font-size: 3rem;
     flex-direction: column;
     perspective: 1000px;
+    transform: translateX(40px);
 }
 .title .happy, .title .birthday{
     position: relative;
@@ -1101,4 +1102,9 @@ button:hover {
 }
 body {
   overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .title {
+        transform: translateX(0);
+    }
 }
