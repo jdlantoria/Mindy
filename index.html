@@ -217,6 +217,12 @@
     var intervalContent;
     var intervalTitle;
     $("#btn__letter").on("click", function () {
+        
+        const music = document.getElementById("bg-music");
+  if (music) {
+    music.volume = 0.3;
+    music.play();
+  }
         $(".box__letter").slideDown()
         setTimeout(function () {
             $(".letter__border").slideDown();
