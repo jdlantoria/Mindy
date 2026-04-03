@@ -1080,3 +1080,26 @@ button:hover {
   color: white;
   box-shadow: 0 0 15px #ff4d6d;
 }
+@media (max-width: 768px) {
+
+  .box_letter {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .letter {
+    width: 100%;
+    height: auto;
+    transform: rotate(-5deg); /* retain tilt pero mas controlled */
+  }
+
+  .letter .text {
+    font-size: 14px;
+    padding: 15px;
+  }
+
+}
+body {
+  overflow-x: hidden;
+}
