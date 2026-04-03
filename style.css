@@ -129,7 +129,7 @@ body {
     font-size: 3rem;
     flex-direction: column;
     perspective: 1000px;
-    transform: translateX(40px);
+    transform: translateX(80px);
 }
 .title .happy, .title .birthday{
     position: relative;
