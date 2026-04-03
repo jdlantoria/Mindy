@@ -1082,21 +1082,20 @@ button:hover {
 }
 @media (max-width: 768px) {
 
-  .box_letter {
-    width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .letter {
-    width: 100%;
+  .box__letter .letter__border {
+    width: 95vw;
     height: auto;
-    transform: rotate(-5deg); /* retain tilt pero mas controlled */
+    max-height: 90vh;
+    overflow-y: auto;
   }
 
-  .letter .text {
+  .letter__border .letter {
+    transform: rotate(-5deg);
+  }
+
+  .content__letter .right .text__letter {
     font-size: 14px;
-    padding: 15px;
+    line-height: 1.4;
   }
 
 }
