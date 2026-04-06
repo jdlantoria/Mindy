@@ -1174,3 +1174,33 @@ right:auto;
 background:#FF7882;
 box-shadow:-2px 0 5px rgba(0,0,0,0.2);
 }
+.card2-content .book{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+}
+
+.card2-content .page{
+width:100%;
+height:100%;
+position:absolute;
+top:0;
+left:0;
+background:#FF7882;
+padding:25px;
+box-sizing:border-box;
+}
+
+.card2-content .page2{
+left:100%;
+}
+
+.card2-content .book.flip .page1{
+left:-100%;
+}
+
+.card2-content .book.flip .page2{
+left:0;
+}
