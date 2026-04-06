@@ -1204,3 +1204,55 @@ left:-100%;
 .card2-content .book.flip .page2{
 left:0;
 }
+/* formal letter layout */
+.page{
+padding:35px 30px 40px 30px !important;
+font-family: "Poppins", serif !important;
+font-size:14px !important;
+line-height:1.7 !important;
+text-align:justify;
+letter-spacing:0.2px;
+}
+
+/* title spacing */
+.page h3{
+font-family: "Dancing Script", cursive;
+text-align:center;
+font-size:26px;
+margin-bottom:12px;
+}
+
+/* paragraph spacing */
+.page p{
+margin-bottom:14px;
+}
+
+/* heart fix */
+.page::before{
+content:"❤";
+position:absolute;
+top:12px;
+left:50%;
+transform:translateX(-50%);
+font-size:18px;
+opacity:.8;
+}
+
+/* remove overlapping image heart */
+.imageCute2{
+display:none;
+}
+
+/* button spacing */
+.nextBtn,
+.prevBtn{
+bottom:15px;
+padding:6px 14px;
+font-size:12px;
+}
+
+/* better page look */
+.page{
+border-left:2px solid rgba(255,255,255,.4);
+box-shadow:-5px 0 10px rgba(0,0,0,.15);
+}
